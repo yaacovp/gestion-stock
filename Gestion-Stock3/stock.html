@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gestion de Stock</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestion de Stock</h1>
+    <div id="message" class="message"></div>
+    <div id="notification" class="notification"></div>
+    
+
+
+    <!-- Section pour ajouter des éléments au stock -->
+    <section id="ajouter-stock">
+        <h2>Ajouter au Stock</h2>
+        <input type="text" id="nom-produit" placeholder="Nom du produit">
+        <input type="number" id="quantite-produit" placeholder="Quantité">
+        <select id="categorie-produit">
+            <option value="">Choisir une catégorie</option>
+            <option value="L">L</option>
+            <option value="ml">ml</option>
+            <option value="Kg">Kg</option>
+            <option value="g">g</option>
+            <option value="Palettes">Palettes</option>
+            <option value="Bouteilles">Bouteilles</option>
+            <option value="Packets">Packets</option>
+            <option value="Pots">Pots</option>
+            <option value="Autre">Autre</option>
+            <!-- Ajoutez d'autres catégories ici si nécessaire -->
+        </select>
+        <button id="ajouter">Ajouter</button>
+    </section>
+
+    <!-- Section pour utiliser du stock -->
+    <section id="utiliser-stock">
+        <h2>Utiliser du Stock</h2>
+        <div id="liste-produits"></div>
+    </section>
+
+    <!-- Section pour afficher le stock restant -->
+    <section id="stock-restant">
+        <h2>Stock Restant</h2>
+        <div id="afficher-stock"></div>
+    </section>
+
+    <input type="file" id="importer" accept=".json">
+    <button id="exporter">Sauvegarder</button>
+    <script src="script.js"></script>
+</body>
+</html>
